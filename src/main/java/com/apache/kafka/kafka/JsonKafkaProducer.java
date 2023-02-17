@@ -28,5 +28,6 @@ public class JsonKafkaProducer {
                 .setHeader(KafkaHeaders.TOPIC,"myJavaTopicJson")
                 .build();
         kafkaTemplate.send(message);
+
     }
 }

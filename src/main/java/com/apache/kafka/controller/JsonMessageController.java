@@ -26,4 +26,12 @@ public class JsonMessageController {
 
         return  ResponseEntity.ok("myJavaTopic_Json");
     }
+
+    @PostMapping("/publish-user")
+    public  ResponseEntity<User> publishUser(@RequestBody User user) {
+
+            return ResponseEntity.ok(user);
+
+    }
+
 }
