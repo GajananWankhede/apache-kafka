@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class KafkaConsumer {
-
+// Kafka consumer
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumer.class);
 
     @KafkaListener(topics = "myJavaTopic",groupId = "myGroup")
